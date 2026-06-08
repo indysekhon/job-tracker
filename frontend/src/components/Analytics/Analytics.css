@@ -1,0 +1,74 @@
+.analytics {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.analytics h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.analytics-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-card.wide {
+  grid-column: span 2;
+}
+
+.analytics-card h2 {
+  margin: 0 0 20px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.metric {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.metric-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.metric-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .analytics-card.wide {
+    grid-column: span 1;
+  }
+}

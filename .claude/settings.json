@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(env|key|pem|crt|cert|p12|pfx|sqlite|db\\)$|node_modules|dist|build\")",
+      "Bash(git rm *)",
+      "Bash(rm -rf .git)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
